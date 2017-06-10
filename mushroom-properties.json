@@ -1,0 +1,608 @@
+[
+    {
+        "property_name": "cap-shape",
+        "values": [
+            {
+                "name": "bell",
+                "index": "b"
+            },
+            {
+                "name": "conical",
+                "index": "c"
+            },
+            {
+                "name": "convex",
+                "index": "x"
+            },
+            {
+                "name": "flat",
+                "index": "f"
+            },
+            {
+                "name": "knobbed",
+                "index": "k"
+            },
+            {
+                "name": "snuken",
+                "index": "s"
+            }
+        ]
+    },
+    {
+        "property_name": "cap-surface",
+        "values": [
+            {
+                "name": "fibrous",
+                "index": "f"
+            },
+            {
+                "name": "grooves",
+                "index": "g"
+            },
+            {
+                "name": "scaly",
+                "index": "y"
+            },
+            {
+                "name": "smooth",
+                "index": "s"
+            }
+        ]
+    },
+    {
+        "property_name": "cap-color",
+        "values": [
+            {
+                "name": "brown",
+                "index": "n"
+            },
+            {
+                "name": "buff",
+                "index": "b"
+            },
+            {
+                "name": "cinnamon",
+                "index": "c"
+            },
+            {
+                "name": "gray",
+                "index": "g"
+            },
+            {
+                "name": "green",
+                "index": "r"
+            },
+            {
+                "name": "pink",
+                "index": "p"
+            },
+            {
+                "name": "purple",
+                "index": "u"
+            },
+            {
+                "name": "red",
+                "index": "e"
+            },
+            {
+                "name": "white",
+                "index": "w"
+            },
+            {
+                "name": "yellow",
+                "index": "y"
+            }
+        ]
+    },
+    {
+        "property_name": "bruises",
+        "values": [
+            {
+                "name": "brusies",
+                "index": "t"
+            },
+            {
+                "name": "no",
+                "index": "f"
+            }
+        ]
+    },
+    {
+        "property_name": "odor",
+        "values": [
+            {
+                "name": "almond",
+                "index": "a"
+            },
+            {
+                "name": "anise",
+                "index": "l"
+            },
+            {
+                "name": "creosote",
+                "index": "c"
+            },
+            {
+                "name": "fishy",
+                "index": "y"
+            },
+            {
+                "name": "foul",
+                "index": "f"
+            },
+            {
+                "name": "musty",
+                "index": "m"
+            },
+            {
+                "name": "none",
+                "index": "n"
+            },
+            {
+                "name": "pungent",
+                "index": "p"
+            },
+            {
+                "name": "spicy",
+                "index": "s"
+            }
+        ]
+    },
+    {
+        "property_name": "gill-attachment",
+        "values": [
+            {
+                "name": "attached",
+                "index": "a"
+            },
+            {
+                "name": "descending",
+                "index": "d"
+            },
+            {
+                "name": "free",
+                "index": "f"
+            },
+            {
+                "name": "notched",
+                "index": "n"
+            }
+        ]
+    },
+    {
+        "property_name": "gill-spacing",
+        "values": [
+            {
+                "name": "close",
+                "index": "c"
+            },
+            {
+                "name": "crowded",
+                "index": "w"
+            },
+            {
+                "name": "distant",
+                "index": "d"
+            }
+        ]
+    },
+    {
+        "property_name": "gill-size",
+        "values": [
+            {
+                "name": "broad",
+                "index": "b"
+            },
+            {
+                "name": "narrow",
+                "index": "n"
+            }
+        ]
+    },
+    {
+        "property_name": "gill-color",
+        "values": [
+            {
+                "name": "brown",
+                "index": "n"
+            },
+            {
+                "name": "buff",
+                "index": "b"
+            },
+            {
+                "name": "black",
+                "index": "k"
+            },
+            {
+                "name": "gray",
+                "index": "g"
+            },
+            {
+                "name": "green",
+                "index": "r"
+            },
+            {
+                "name": "pink",
+                "index": "p"
+            },
+            {
+                "name": "purple",
+                "index": "u"
+            },
+            {
+                "name": "red",
+                "index": "e"
+            },
+            {
+                "name": "orange",
+                "index": "o"
+            },
+            {
+                "name": "chocolate",
+                "index": "h"
+            },
+            {
+                "name": "white",
+                "index": "w"
+            },
+            {
+                "name": "yellow",
+                "index": "y"
+            }
+        ]
+    },
+    {
+        "property_name": "stalk-shape",
+        "values": [
+            {
+                "name": "enlarging",
+                "index": "e"
+            },
+            {
+                "name": "tapering",
+                "index": "t"
+            }
+        ]
+    },
+    {
+        "property_name": "stalk-root",
+        "values": [
+            {
+                "name": "bulbous",
+                "index": "b"
+            },
+            {
+                "name": "club",
+                "index": "c"
+            },
+            {
+                "name": "cup",
+                "index": "u"
+            },
+            {
+                "name": "equal",
+                "index": "e"
+            },
+            {
+                "name": "rhizomorphs",
+                "index": "z"
+            },
+            {
+                "name": "rooted",
+                "index": "r"
+            },
+            {
+                "name": "missing",
+                "index": "?"
+            }
+        ]
+    },
+    {
+        "property_name": "stalk-surface-above-ring",
+        "values": [
+            {
+                "name": "fibrous",
+                "index": "f"
+            },
+            {
+                "name": "silky",
+                "index": "k"
+            },
+            {
+                "name": "scaly",
+                "index": "y"
+            },
+            {
+                "name": "smooth",
+                "index": "s"
+            }
+        ]
+    },
+    {
+        "property_name": "stalk-surface-below-ring",
+        "values": [
+            {
+                "name": "fibrous",
+                "index": "f"
+            },
+            {
+                "name": "silky",
+                "index": "k"
+            },
+            {
+                "name": "scaly",
+                "index": "y"
+            },
+            {
+                "name": "smooth",
+                "index": "s"
+            }
+        ]
+    },
+    {
+        "property_name": "stalk-color-above-ring",
+        "values": [
+            {
+                "name": "brown",
+                "index": "n"
+            },
+            {
+                "name": "buff",
+                "index": "b"
+            },
+            {
+                "name": "gray",
+                "index": "g"
+            },
+            {
+                "name": "pink",
+                "index": "p"
+            },
+            {
+                "name": "red",
+                "index": "e"
+            },
+            {
+                "name": "orange",
+                "index": "o"
+            },
+            {
+                "name": "white",
+                "index": "w"
+            },
+            {
+                "name": "yellow",
+                "index": "y"
+            }
+        ]
+    },
+    {
+        "property_name": "stalk-color-below-ring",
+        "values": [
+            {
+                "name": "brown",
+                "index": "n"
+            },
+            {
+                "name": "buff",
+                "index": "b"
+            },
+            {
+                "name": "gray",
+                "index": "g"
+            },
+            {
+                "name": "pink",
+                "index": "p"
+            },
+            {
+                "name": "red",
+                "index": "e"
+            },
+            {
+                "name": "orange",
+                "index": "o"
+            },
+            {
+                "name": "white",
+                "index": "w"
+            },
+            {
+                "name": "yellow",
+                "index": "y"
+            }
+        ]
+    },
+    {
+        "property_name": "veil-type",
+        "values": [
+            {
+                "name": "partial",
+                "index": "p"
+            },
+            {
+                "name": "universal",
+                "index": "u"
+            }
+        ]
+    },
+    {
+        "property_name": "veil-color",
+        "values": [
+            {
+                "name": "brown",
+                "index": "b"
+            },
+            {
+                "name": "orange",
+                "index": "o"
+            },
+            {
+                "name": "white",
+                "index": "w"
+            },
+            {
+                "name": "yellow",
+                "index": "y"
+            }
+        ]
+    },
+    {
+        "property_name": "ring-number",
+        "values": [
+            {
+                "name": "none",
+                "index": "n"
+            },
+            {
+                "name": "one",
+                "index": "o"
+            },
+            {
+                "name": "two",
+                "index": "t"
+            }
+        ]
+    },
+    {
+        "property_name": "ring-type",
+        "values": [
+            {
+                "name": "cobwebby",
+                "index": "c"
+            },
+            {
+                "name": "evanescent",
+                "index": "e"
+            },
+            {
+                "name": "flaring",
+                "index": "f"
+            },
+            {
+                "name": "large",
+                "index": "l"
+            },
+            {
+                "name": "none",
+                "index": "n"
+            },
+            {
+                "name": "pendant",
+                "index": "p"
+            },
+            {
+                "name": "sheathing",
+                "index": "s"
+            },
+            {
+                "name": "zone",
+                "index": "z"
+            }
+        ]
+    },
+    {
+        "property_name": "spore-print-color",
+        "values": [
+            {
+                "name": "brown",
+                "index": "n"
+            },
+            {
+                "name": "buff",
+                "index": "b"
+            },
+            {
+                "name": "black",
+                "index": "k"
+            },
+            {
+                "name": "green",
+                "index": "r"
+            },
+            {
+                "name": "purple",
+                "index": "u"
+            },
+            {
+                "name": "orange",
+                "index": "o"
+            },
+            {
+                "name": "chocolate",
+                "index": "h"
+            },
+            {
+                "name": "white",
+                "index": "w"
+            },
+            {
+                "name": "yellow",
+                "index": "y"
+            }
+        ]
+    },
+    {
+        "property_name": "population",
+        "values": [
+            {
+                "name": "abundant",
+                "index": "a"
+            },
+            {
+                "name": "clustered",
+                "index": "c"
+            },
+            {
+                "name": "numerous",
+                "index": "n"
+            },
+            {
+                "name": "scattered",
+                "index": "s"
+            },
+            {
+                "name": "several",
+                "index": "v"
+            },
+            {
+                "name": "solitary",
+                "index": "y"
+            }
+        ]
+    },
+    {
+        "property_name": "habitat",
+        "values": [
+            {
+                "name": "grasses",
+                "index": "g"
+            },
+            {
+                "name": "leaves",
+                "index": "l"
+            },
+            {
+                "name": "meadows",
+                "index": "m"
+            },
+            {
+                "name": "paths",
+                "index": "p"
+            },
+            {
+                "name": "urban",
+                "index": "u"
+            },
+            {
+                "name": "waste",
+                "index": "w"
+            },
+            {
+                "name": "woods",
+                "index": "d"
+            }
+        ]
+    }
+]
