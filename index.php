@@ -8,45 +8,6 @@
 <body>
     <div class="container">
         <form>
-            <!-- <fieldset class="form-group">
-                <legend>Cap Shape</legend>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="cap-shape" value="b">
-                        Bell
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="cap-shape" value="c">
-                        Conical
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="cap-shape" value="x">
-                        Convex
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="cap-shape" value="f">
-                        Flat
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="cap-shape" value="k">
-                        Knobbed
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="cap-shape" value="s">
-                        Sunken
-                    </label>
-                </div>
-            </fieldset> -->
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

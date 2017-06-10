@@ -2,26 +2,28 @@ $.getJSON("mushroom-properties.json", ({
 })).done(createForm);
 
 function createForm(json) {
-	$.each(json, function(x, item) {
-		// console.log(item);
+	$.each(json, function(i, property) {
 		var fieldset = $(document.createElement("fieldset")).addClass("form-group")
-		.append($(document.createElement("legend")).html(item.property_name));
+		.append($(document.createElement("legend")).html(property.property_name));
 
 		var divs = [];
-		for (var i = 0; i < item.values.length; i++) {
-			console.log(item.values[i]);
+		$.each(property.values, function(j, value) {
 			var div = $(document.createElement("div")).addClass("form-check");
-			div.append($(document.createElement("label"))
+
+			var label = ($(document.createElement("label"))
 			.addClass("form-check-label"))
-			.html(" " + item.values[i].name)
-			.prepend($(document.createElement("input")).addClass("form-check-input")
+			.html(" " + value.name);
+
+			label.prepend($(document.createElement("input")).addClass("form-check-input")
 			.attr({
 				type: "radio",
-				name: item.property_name,
-				value: item.values[i].index
+				name: property.property_name,
+				value: value.index
 			}));
+
+			div.append(label);
 			divs.push(div);
-		}
+		});
 
 		fieldset.append(divs);
 		$("form").prepend(fieldset);
