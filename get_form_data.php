@@ -9,16 +9,7 @@ if(isset($_POST["submit"])){
 	$properties = array_keys($properties);
 
 }
-?>
-<pre>
-	<?php print_r($properties); ?>
-	<?php print_r($values); ?>
-</pre>
-<?php
 if (isset($properties)) {
-	// for ($i=0; $i < count($properties); $i++) {
-	// 	echo $properties[$i] . " = " . $values[$i] + "\n";
-	// }
 	include_once("get_result.php");
 }
 ?>
