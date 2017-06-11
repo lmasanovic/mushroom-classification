@@ -8,42 +8,34 @@ function createForm(json) {
 
 		var divs = [];
 		$.each(property.values, function(j, value) {
-			var div = $(document.createElement("div")).addClass("form-check");
-
-			var label = ($(document.createElement("label"))
-			.addClass("form-check-label"))
-			.html(" " + value.name);
-
-			label.prepend($(document.createElement("input")).addClass("form-check-input")
-			.attr({
-				type: "radio",
-				name: property.property_name,
-				value: value.index
-			}));
-
-			div.append(label);
+			var div = createDivForForm(value.name, property.property_name, value.index);
 			divs.push(div);
 		});
-		var div = $(document.createElement("div")).addClass("form-check");
-		var label = ($(document.createElement("label"))
-		.addClass("form-check-label"))
-		.html(" Not sure");
-
-		label.prepend($(document.createElement("input")).addClass("form-check-input")
-		.attr({
-			type: "radio",
-			name: "not sure",
-			value: "null"
-		}));
-		div.append(label);
+		var div = createDivForForm(" not sure", property.property_name, "null");
 		divs.push(div);
 
 		fieldset.append(divs);
 		$("form").prepend(fieldset);
 	});
+
+	$("input.form-check-input[value='null']").attr({checked: "checked"});
 }
 
 
-function createDivForForms(name, value) {
+function createDivForForm(value, property, index) {
+	var div = $(document.createElement("div")).addClass("form-check");
 
+	var label = ($(document.createElement("label"))
+	.addClass("form-check-label"))
+	.html(" " + value); //value.name
+
+	label.prepend($(document.createElement("input")).addClass("form-check-input")
+	.attr({
+		type: "radio",
+		name: property, //property.property_name
+		value: index //value.index
+	}));
+
+	div.append(label);
+	return div;
 }
