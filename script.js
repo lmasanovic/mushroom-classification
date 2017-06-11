@@ -2,23 +2,24 @@ $.getJSON("mushroom-properties.json", ({
 })).done(createForm);
 
 function createForm(json) {
-	$.each(json, function(i, property) {
+		$.each(json, function(i, property) {
 		var fieldset = $(document.createElement("fieldset")).addClass("form-group")
-		.append($(document.createElement("legend")).html(property.property_name));
-
+		.append($(document.createElement("legend")).html(property.name_eng));
 		var divs = [];
 		$.each(property.values, function(j, value) {
 			var div = createDivForForm(value.name, property.property_name, value.index);
 			divs.push(div);
 		});
 		var div = createDivForForm(" not sure", property.property_name, "null");
+
 		divs.push(div);
 
 		fieldset.append(divs);
-		$("form").prepend(fieldset);
+		$("form").append(fieldset);
 	});
 
 	$("input.form-check-input[value='null']").attr({checked: "checked"});
+
 }
 
 
