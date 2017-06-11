@@ -19,6 +19,16 @@ function createForm(json) {
 	});
 
 	$("input.form-check-input[value='null']").attr({checked: "checked"});
+	$("form").append($(document.createElement("button"))
+		.html("Submit")
+		.addClass("btn btn-primary")
+		.attr({
+			type: "submit",
+			name: "submit",
+			value: "submit"
+		})
+	);
+
 
 }
 

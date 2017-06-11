@@ -7,10 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="get_form_data.php" method="post">
-
-            <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
-        </form>
+        <form action="get_form_data.php" method="post"></form>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
