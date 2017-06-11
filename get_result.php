@@ -2,56 +2,8 @@
 $data = array(
 	"Inputs" => array(
 		"input1" => array(
-			"ColumnNames" => array(
-				"class",
-				"cap-shape",
-				"cap-surface",
-				"cap-color",
-				"bruises",
-				"odor",
-				"gill-attachment",
-				"gill-spacing",
-				"gill-size",
-				"gill-color",
-				"stalk-shape",
-				"stalk-root",
-				"stalk-surface-above-ring",
-				"stalk-surface-below-ring",
-				"stalk-color-above-ring",
-				"stalk-color-below-ring",
-				"veil-type",
-				"veil-color",
-				"ring-number",
-				"ring-type",
-				"spore-print-color",
-				"population",
-				"habitat"
-			),
-			"Values" => array(array(
-				null,
-				"x",
-				"y",
-				"w",
-				"t",
-				"p",
-				"f",
-				"c",
-				null,
-				"k",
-				"e",
-				"e",
-				"s",
-				"s",
-				"w",
-				null,
-				null,
-				null,
-				null,
-				null,
-				"n",
-				"s",
-				"u"
-			))
+			"ColumnNames" => $properties,
+			"Values" => array($values)
 		),
 	),
 	'GlobalParameters'=> null

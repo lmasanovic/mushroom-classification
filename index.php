@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <a class="btn btn-warning" href="get_result.php">test</a>
     <div class="container">
-        <form>
+        <form action="get_form_data.php" method="post">
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
         </form>
     </div>
 </body>
