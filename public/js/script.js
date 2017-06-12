@@ -1,4 +1,4 @@
-$.getJSON("mushroom-properties.json", ({
+$.getJSON("../data/mushroom-properties.json", ({
 })).done(createForm);
 
 function createForm(json) {

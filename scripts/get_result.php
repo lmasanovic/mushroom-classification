@@ -32,7 +32,7 @@ if (isset($result["Results"]["output1"]["value"]["Values"][0])) {
 	session_start();
 	$_SESSION["class"] = $result["Results"]["output1"]["value"]["Values"][0][0];
 	$_SESSION["probability"] = $result["Results"]["output1"]["value"]["Values"][0][1];
-	header("Location: show_result.php");
+	header("Location: ../public/show_result.php");
 	die();
 } else {
 	echo "something is wrong";
