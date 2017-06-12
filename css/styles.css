@@ -3,26 +3,22 @@
   text-align: center;
 }
 
-
-
+/* form -styling */
 fieldset {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 10px;
 }
-
 fieldset legend {
     font-weight: bold;
+    padding: 10px;
 }
-
 fieldset img {
     max-height: 150px;
     margin: 0 auto;
 }
-
 fieldset .form-check {
     padding: 10px;
 }
-
 
 /* helper classes */
 .inline-block {

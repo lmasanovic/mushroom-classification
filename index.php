@@ -1,7 +1,7 @@
-<?php include("includes/header.php") ?>
+<?php include("includes/header.php"); ?>
 
 <div class="starter-template">
-    <h1>Welcom to Mushroom Checker</h1>
+    <h1>Welcome to Mushroom Checker</h1>
     <p class="lead">Check whether the mushroom is poisonus or not</p>
 </div>
 </div>
@@ -9,4 +9,4 @@
     <form action="php_scripts/get_form_data.php" method="post"></form>
 </div>
 
-<?php include("includes/footer.php") ?>
+<?php include("includes/footer.php"); ?>

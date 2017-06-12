@@ -17,6 +17,14 @@ if(isset($_POST["submit"])){
 
 }
 if (isset($properties)) {
-	include_once("get_result.php");
+	if(array_count_values($values)["null"] < 21) {
+		include_once("get_result.php");
+	}
+	$_SESSION["error_type"] = "low_input";
+	$_SESSION["error_msg"] = "Select at least 3 properties.";
+} else {
+	$_SESSION["error_type"] = "error";
+	$_SESSION["error_msg"] = "Something went horribly wrong.";
 }
+header("Location: ../index.php");
 ?>

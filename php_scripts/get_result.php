@@ -35,6 +35,8 @@ if (isset($result["Results"]["output1"]["value"]["Values"][0])) {
 	header("Location: ../show_result.php");
 	die();
 } else {
-	echo "something is wrong";
+	$_SESSION["error_type"] = "error";
+	$_SESSION["error_msg"] = "Something went horribly wrong.";
+	header("Location: ../index.php");
 }
 ?>

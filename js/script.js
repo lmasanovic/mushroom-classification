@@ -8,7 +8,7 @@ function createForm(json) {
 		.append($(document.createElement("legend")).html(property.name_eng));
 
 		// Container div for values
-		var valuesContainer = $(document.createElement("div")).addClass("form-values-container");
+		var valuesContainer = $(document.createElement("div"));
 
 		$.each(property.values, function(j, value) {
 			var div = createPropertyValueDiv(value.name, property.property_name, value.index);
@@ -45,7 +45,6 @@ function createForm(json) {
 		value: "submit"
 	}));
 }
-
 
 function createPropertyValueDiv(value, property, index) {
 	var div = $(document.createElement("div")).addClass("form-check inline-block");
