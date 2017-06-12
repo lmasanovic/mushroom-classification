@@ -8,6 +8,5 @@ if (isset($_SESSION["class"]) && isset($_SESSION["probability"])) {
 }
 
 echo "<h1>Mushroom is " . $edible . ".</h1>";
-echo "<img src=images/" . $edible . "_mushroom.jpg />"
-
+echo "<img src=images/" . $edible . "_mushroom.jpg />";
 ?>
