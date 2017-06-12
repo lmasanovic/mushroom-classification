@@ -5,6 +5,7 @@ function createForm(json) {
 		$.each(json, function(i, property) {
 		var fieldset = $(document.createElement("fieldset")).addClass("form-group")
 		.append($(document.createElement("legend")).html(property.name_eng));
+
 		var divs = [];
 		$.each(property.values, function(j, value) {
 			var div = createDivForForm(value.name, property.property_name, value.index);
@@ -12,8 +13,17 @@ function createForm(json) {
 		});
 		var div = createDivForForm(" not sure", property.property_name, "null");
 
-		divs.push(div);
+		//adding image
+		if(property.image) {
+			fieldset.append($(document.createElement("img"))
+			.addClass("img-responsive")
+			.attr({
+				src: "images/" + property.image,
+				alt: property.name_eng
+			}));
+		}
 
+		divs.push(div);
 		fieldset.append(divs);
 		$("form").append(fieldset);
 	});

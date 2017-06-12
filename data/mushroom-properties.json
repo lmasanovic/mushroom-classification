@@ -2,6 +2,7 @@
     {
         "property_name": "cap-shape",
         "name_eng": "Cap Shape",
+        "image": "cap-shape.jpg",
         "values": [
             {
                 "name": "bell",
@@ -32,6 +33,7 @@
     {
         "property_name": "cap-surface",
         "name_eng": "Cap Surface",
+        "image": "cap-surface.jpg",
         "values": [
             {
                 "name": "fibrous",
@@ -54,6 +56,7 @@
     {
         "property_name": "cap-color",
         "name_eng": "Cap Color",
+        "image": false,
         "values": [
             {
                 "name": "brown",
@@ -100,6 +103,7 @@
     {
         "property_name": "bruises",
         "name_eng": "Bruises",
+        "image": false,
         "values": [
             {
                 "name": "brusies",
@@ -114,6 +118,7 @@
     {
         "property_name": "odor",
         "name_eng": "Odor",
+        "image": false,
         "values": [
             {
                 "name": "almond",
@@ -156,6 +161,7 @@
     {
         "property_name": "gill-attachment",
         "name_eng": "Gill Attachment",
+        "image": "gill-attachment.jpg",
         "values": [
             {
                 "name": "attached",
@@ -178,6 +184,7 @@
     {
         "property_name": "gill-spacing",
         "name_eng": "Gill Spacing",
+        "image": "gill-spacing.jpg",
         "values": [
             {
                 "name": "close",
@@ -196,6 +203,7 @@
     {
         "property_name": "gill-size",
         "name_eng": "Gill Size",
+        "image": false,
         "values": [
             {
                 "name": "broad",
@@ -210,6 +218,7 @@
     {
         "property_name": "gill-color",
         "name_eng": "Gill Color",
+        "image": false,
         "values": [
             {
                 "name": "brown",
@@ -264,6 +273,7 @@
     {
         "property_name": "stalk-shape",
         "name_eng": "Stalk Shape",
+        "image": "stalk-shape.jpg",
         "values": [
             {
                 "name": "enlarging",
@@ -278,6 +288,7 @@
     {
         "property_name": "stalk-root",
         "name_eng": "Stalk Root",
+        "image": "stalk-root-shape.jpg",
         "values": [
             {
                 "name": "bulbous",
@@ -312,6 +323,7 @@
     {
         "property_name": "stalk-surface-above-ring",
         "name_eng": "Stalk Surface Above Ring",
+        "image": "stalk-surface-above-and-below.jpg",
         "values": [
             {
                 "name": "fibrous",
@@ -334,6 +346,7 @@
     {
         "property_name": "stalk-surface-below-ring",
         "name_eng": "Stalk Surface Below Ring",
+        "image": "stalk-surface-above-and-below.jpg",
         "values": [
             {
                 "name": "fibrous",
@@ -356,6 +369,7 @@
     {
         "property_name": "stalk-color-above-ring",
         "name_eng": "Stalk Color Above Ring",
+        "image": false,
         "values": [
             {
                 "name": "brown",
@@ -394,6 +408,7 @@
     {
         "property_name": "stalk-color-below-ring",
         "name_eng": "Stalk Color Below Ring",
+        "image": false,
         "values": [
             {
                 "name": "brown",
@@ -432,6 +447,7 @@
     {
         "property_name": "veil-type",
         "name_eng": "Veil Type",
+        "image": "veil-type.jpg",
         "values": [
             {
                 "name": "partial",
@@ -446,6 +462,7 @@
     {
         "property_name": "veil-color",
         "name_eng": "Veil Color",
+        "image": false,
         "values": [
             {
                 "name": "brown",
@@ -468,6 +485,7 @@
     {
         "property_name": "ring-number",
         "name_eng": "Ring Number",
+        "image": false,
         "values": [
             {
                 "name": "none",
@@ -486,6 +504,7 @@
     {
         "property_name": "ring-type",
         "name_eng": "Ring Type",
+        "image": "ring-type.jpg",
         "values": [
             {
                 "name": "cobwebby",
@@ -524,6 +543,7 @@
     {
         "property_name": "spore-print-color",
         "name_eng": "Spore Print Color",
+        "image": false,
         "values": [
             {
                 "name": "brown",
@@ -566,6 +586,7 @@
     {
         "property_name": "population",
         "name_eng": "Population",
+        "image": false,
         "values": [
             {
                 "name": "abundant",
@@ -596,6 +617,7 @@
     {
         "property_name": "habitat",
         "name_eng": "Habitat",
+        "image": false,
         "values": [
             {
                 "name": "grasses",
