@@ -3,8 +3,8 @@ $.getJSON("../data/mushroom-properties.json", ({
 
 function createForm(json) {
 		$.each(json, function(i, property) {
-		var fieldset = $(document.createElement("fieldset")).addClass("form-group")
-		.append($(document.createElement("legend")).html(property.name_eng));
+		var fieldset = $(document.createElement("fieldset")).addClass("form-group m-b-40")
+		.append($(document.createElement("legend")).addClass("legend-bold").html(property.name_eng));
 
 		var divs = [];
 		$.each(property.values, function(j, value) {
@@ -16,7 +16,7 @@ function createForm(json) {
 		//adding image
 		if(property.image) {
 			fieldset.append($(document.createElement("img"))
-			.addClass("img-responsive")
+			.addClass("img-responsive images")
 			.attr({
 				src: "images/" + property.image,
 				alt: property.name_eng
@@ -47,7 +47,7 @@ function createDivForForm(value, property, index) {
 	var div = $(document.createElement("div")).addClass("form-check");
 
 	var label = ($(document.createElement("label"))
-	.addClass("form-check-label"))
+	.addClass("form-check-label inline"))
 	.html(" " + value); //value.name
 
 	label.prepend($(document.createElement("input")).addClass("form-check-input")
