@@ -18,6 +18,16 @@ fieldset img {
 fieldset .form-check {
     padding: 10px;
 }
+.div-colors img {
+    max-height: 70px
+}
+.colorRect {
+    height: 70px;
+    width: 70px;
+    border: 2px solid #666;
+    border-radius: 20px;
+}
+
 
 /* helper classes */
 .inline-block {

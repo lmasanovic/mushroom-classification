@@ -10,23 +10,19 @@ function createForm(json) {
 		// Container div for values
 		var valuesContainer = $(document.createElement("div"));
 
+		if(property.image == "color") {
+			valuesContainer.addClass("div-colors");
+		}
+
+		// Create divs for each value
 		$.each(property.values, function(j, value) {
-			var div = createPropertyValueDiv(value.name, property.property_name, value.index);
+			var div = createPropertyValueDiv(value.name, property.property_name, value.index, property.image);
 			valuesContainer.append(div);
 		});
 
 		// Add not sure option for every property
-		valuesContainer.append(createPropertyValueDiv(" not sure", property.property_name, "null"));
-
-		// Add image if exists
-		if(property.image) {
-			fieldset.append($(document.createElement("img"))
-			.addClass("img-responsive")
-			.attr({
-				src: "images/" + property.image,
-				alt: property.name_eng
-			}));
-		}
+		var imageNotSure = (property.image) ? "not_sure_mushroom.jpg" : false;
+		valuesContainer.append(createPropertyValueDiv(" not sure", property.property_name, "null", imageNotSure));
 
 		fieldset.append(valuesContainer);
 		$("form").append(fieldset);
@@ -46,7 +42,7 @@ function createForm(json) {
 	}));
 }
 
-function createPropertyValueDiv(value, property, index) {
+function createPropertyValueDiv(value, property, index, imageLoc) {
 	var div = $(document.createElement("div")).addClass("form-check inline-block");
 
 	var label = ($(document.createElement("label"))
@@ -59,6 +55,37 @@ function createPropertyValueDiv(value, property, index) {
 		name: property, //property.property_name
 		value: index //value.index
 	}));
+
+	// Add image/color if exists
+	if(imageLoc) {
+		var image;
+		if(imageLoc != "color") {
+			var imgSrc = "images/" +  imageLoc;
+			var imageClasses = "img-responsive";
+			if(index != "null") {
+				imgSrc += "/" + value + ".jpg";
+			}
+
+			image = $(document.createElement("img"))
+			.addClass(imageClasses)
+			.attr({
+				src: imgSrc,
+				alt: value
+			});
+		} else {
+			image = $(document.createElement("div"))
+			.css("background-color", function() {
+				if(value == "buff") {
+					return "#F0DC82";
+				} else if (value == "cinnamon") {
+					return "#C58917";
+				}
+				return value;
+			})
+			.addClass("colorRect");
+		}
+		label.prepend(image);
+	}
 
 	div.append(label);
 	return div;

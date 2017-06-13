@@ -2,7 +2,7 @@
     {
         "property_name": "cap-shape",
         "name_eng": "Cap Shape",
-        "image": "cap-shape.jpg",
+        "image": "cap-shape",
         "values": [
             {
                 "name": "bell",
@@ -33,7 +33,7 @@
     {
         "property_name": "cap-surface",
         "name_eng": "Cap Surface",
-        "image": "cap-surface.jpg",
+        "image": "cap-surface",
         "values": [
             {
                 "name": "fibrous",
@@ -56,7 +56,7 @@
     {
         "property_name": "cap-color",
         "name_eng": "Cap Color",
-        "image": false,
+        "image": "color",
         "values": [
             {
                 "name": "brown",
@@ -161,7 +161,7 @@
     {
         "property_name": "gill-attachment",
         "name_eng": "Gill Attachment",
-        "image": "gill-attachment.jpg",
+        "image": "gill-attachment",
         "values": [
             {
                 "name": "attached",
@@ -184,7 +184,7 @@
     {
         "property_name": "gill-spacing",
         "name_eng": "Gill Spacing",
-        "image": "gill-spacing.jpg",
+        "image": "gill-spacing",
         "values": [
             {
                 "name": "close",
@@ -218,7 +218,7 @@
     {
         "property_name": "gill-color",
         "name_eng": "Gill Color",
-        "image": false,
+        "image": "color",
         "values": [
             {
                 "name": "brown",
@@ -273,7 +273,7 @@
     {
         "property_name": "stalk-shape",
         "name_eng": "Stalk Shape",
-        "image": "stalk-shape.jpg",
+        "image": "stalk-shape",
         "values": [
             {
                 "name": "enlarging",
@@ -288,7 +288,7 @@
     {
         "property_name": "stalk-root",
         "name_eng": "Stalk Root",
-        "image": "stalk-root-shape.jpg",
+        "image": "stalk-root",
         "values": [
             {
                 "name": "bulbous",
@@ -323,7 +323,7 @@
     {
         "property_name": "stalk-surface-above-ring",
         "name_eng": "Stalk Surface Above Ring",
-        "image": "stalk-surface-above-and-below.jpg",
+        "image": "stalk-surface-above-and-below",
         "values": [
             {
                 "name": "fibrous",
@@ -346,7 +346,7 @@
     {
         "property_name": "stalk-surface-below-ring",
         "name_eng": "Stalk Surface Below Ring",
-        "image": "stalk-surface-above-and-below.jpg",
+        "image": "stalk-surface-above-and-below",
         "values": [
             {
                 "name": "fibrous",
@@ -369,7 +369,7 @@
     {
         "property_name": "stalk-color-above-ring",
         "name_eng": "Stalk Color Above Ring",
-        "image": false,
+        "image": "color",
         "values": [
             {
                 "name": "brown",
@@ -408,7 +408,7 @@
     {
         "property_name": "stalk-color-below-ring",
         "name_eng": "Stalk Color Below Ring",
-        "image": false,
+        "image": "color",
         "values": [
             {
                 "name": "brown",
@@ -447,7 +447,7 @@
     {
         "property_name": "veil-type",
         "name_eng": "Veil Type",
-        "image": "veil-type.jpg",
+        "image": "veil-type",
         "values": [
             {
                 "name": "partial",
@@ -462,7 +462,7 @@
     {
         "property_name": "veil-color",
         "name_eng": "Veil Color",
-        "image": false,
+        "image": "color",
         "values": [
             {
                 "name": "brown",
@@ -504,7 +504,7 @@
     {
         "property_name": "ring-type",
         "name_eng": "Ring Type",
-        "image": "ring-type.jpg",
+        "image": "ring-type",
         "values": [
             {
                 "name": "cobwebby",
@@ -543,7 +543,7 @@
     {
         "property_name": "spore-print-color",
         "name_eng": "Spore Print Color",
-        "image": false,
+        "image": "color",
         "values": [
             {
                 "name": "brown",
