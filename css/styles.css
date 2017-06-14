@@ -2,6 +2,7 @@
     --primary: #393e46;
     --primary-dark: #222831;
     --accent: #fd7014;
+    --accent-dark: #e35c02;
     --light-color: #eeeeee;
 }
 body {
@@ -23,36 +24,39 @@ header h1 {
 }
 
  /* form container */
- #form-container {
-     text-align: center;
-     padding: 20px;
+ @media screen and (min-width: 1400px) {
+     #formContainer {
+         margin: 0 auto;
+         width: 1350px;
+     }
+ }
+ #formContainer {
      margin-top: 40px;
+     padding: 20px;
+     text-align: center;
      background-color: white;
      border-radius: 20px;
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
-#form-container h2 {
+#formContainer h2 {
     margin-bottom: 30px;
 }
-#form-container small {
+small {
     display: block;
     margin: 10px;
 }
-#submit-button {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 1.2em;
+#submitButton, #backButton {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.4em;
     border: none;
-    color: var(--light-color);
+    color: white;
     background-color: var(--accent);
+    transition : background-color 200ms ease-out;
 }
-#submit-button {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 1.2em;
-    border: none;
-    color: var(--light-color);
-    background-color: var(--accent);
+#submitButton:hover, #backButton:hover {
+    background-color: var(--accent-dark);
+    transition : background-color 200ms ease-out;
 }
 
 
@@ -66,24 +70,28 @@ fieldset legend {
     color: var(--primary-dark);
 }
 fieldset .form-check {
-    border: 2px solid white;
-    border-radius: 15px;
     margin: 10px;
-    padding: 4px;
+    padding: 6px 10px 2px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
     transition : border 200ms ease-out;
+    cursor: pointer;
 }
 fieldset .form-check:hover {
     border: 2px solid var(--accent);
     transition : border 200ms ease-out;
 }
 fieldset img {
-    max-height: 150px;
+    max-height: 120px;
     margin: 0 auto;
+    cursor: pointer;
 }
-/* TODO: hide radiobuttons and use fieldset-selected class instead */
-/*fieldset input {
+fieldset label{
+    cursor: pointer;
+}
+fieldset input {
     display: none;
-}*/
+}
 .div-colors img {
     max-height: 70px
 }
@@ -95,11 +103,29 @@ fieldset img {
     border-radius: 20px;
 }
 
+/* Show result page */
+#resultContainer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#resultContainer img {
+    max-height: 300px;
+    margin: 20px;
+}
+#backButton {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* footer */
 footer {
     text-align: center;
     padding: 5px;
-    margin: 40px;
+    margin: 30px;
     color: var(--primary-dark);
 }
 footer img {
@@ -111,6 +137,6 @@ footer img {
 .inline-block {
   display: inline-block;
 }
-.fieldset-selected {
-    border: 2px solid var(--accent);
+.selected {
+    border: 2px solid var(--accent) !important;
 }

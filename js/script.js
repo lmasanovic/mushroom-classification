@@ -1,10 +1,6 @@
 $.getJSON("./data/mushroom-properties.json", ({
 })).done(createForm);
 
-$(function() {
-
-});
-
 function createForm(json) {
 	$.each(json, function(i, property) {
 
@@ -32,19 +28,23 @@ function createForm(json) {
 		$("form").append(fieldset);
 	});
 
-	// Set not sure option as default
-	$("input.form-check-input[value='null']").attr({checked: "checked"});
-
 	// Append submit button
 	$("form").append($(document.createElement("button"))
 	.html("Submit")
 	.addClass("btn")
 	.attr({
-		id: "submit-button",
+		id: "submitButton",
 		type: "submit",
 		name: "submit",
 		value: "submit"
 	}));
+
+	selectNotReadyAsDefault();
+
+	$("fieldset .form-check").click(function() {
+		$(this).siblings().removeClass("selected");
+		$(this).addClass("selected");
+	});
 }
 
 function createPropertyValueDiv(value, property, index, imageLoc) {
@@ -94,4 +94,10 @@ function createPropertyValueDiv(value, property, index, imageLoc) {
 
 	div.append(label);
 	return div;
+}
+
+function selectNotReadyAsDefault(){
+	// check hidden checkboxes
+	$("input.form-check-input[value='null']").attr({checked: "checked"});
+	$("fieldset .form-check:has(input.form-check-input[value='null'])").addClass("selected");
 }

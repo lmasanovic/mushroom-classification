@@ -11,19 +11,18 @@ if (isset($_SESSION["class"]) && isset($_SESSION["probability"])) {
 		$edible = "poisonus";
 	}
 	$probability *= 100;
-
 } else {
 	header("Location: index.php");
 }
 ?>
-<div class="container">
-
-		<h1>Result</h1>
-		<h3>I'm <?php echo $probability; ?>% sure this mushroom is <?php echo $edible; ?>! </h3>
-		<img src="images/<?php echo $edible; ?>_mushroom.jpg" class="img-circle">
+<div id="resultContainer" class="container">
+		<h2>Results:
+			<small>I'm <?php echo $probability; ?>% sure this mushroom is <?php echo $edible; ?>! </small>
+		</h2>
+		<img src="images/<?php echo $edible; ?>_mushroom.jpg" class="img-rounded">
 
 	<div>
-		<a href="index.php" class="btn btn-primary btn-large "><i class="glyphicon glyphicon-chevron-left"></i> Back</a>
+		<a id="backButton" href="index.php" class="btn"><i class="glyphicon glyphicon-chevron-left"></i> Back</a>
 	</div>
 </div>
 

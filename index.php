@@ -1,6 +1,6 @@
 <?php include("includes/header.php"); ?>
 
-<div id="form-container" class="container">
+<div id="formContainer">
     <h2>Mushroom properties
         <small>Select at least 3 properties and hit submit button.</small>
     </h2>
