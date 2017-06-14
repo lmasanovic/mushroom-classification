@@ -18,13 +18,13 @@ if (isset($_SESSION["class"]) && isset($_SESSION["probability"])) {
 ?>
 <div class="container">
 
-	<h1>I'm <?php echo $probability; ?>% sure this mushroom is <?php echo $edible; ?>! </h1>
-	<img src="images/<?php echo $edible; ?>_mushroom.jpg" class="img-circle">
+		<h1>Result</h1>
+		<h3>I'm <?php echo $probability; ?>% sure this mushroom is <?php echo $edible; ?>! </h3>
+		<img src="images/<?php echo $edible; ?>_mushroom.jpg" class="img-circle">
 
 	<div>
 		<a href="index.php" class="btn btn-primary btn-large "><i class="glyphicon glyphicon-chevron-left"></i> Back</a>
 	</div>
 </div>
-
 
 <?php include("includes/footer.php"); ?>

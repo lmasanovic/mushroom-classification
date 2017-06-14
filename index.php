@@ -2,7 +2,7 @@
 
 <div class="starter-template">
     <h1>Welcome to Mushroom Checker</h1>
-    <p class="lead">Check whether the mushroom is poisonus or not</p>
+    <p class="lead">This site uses machine learning<br> to determine whether mushroom is poisonous or not.</p>
 </div>
 </div>
 <div class="container">
