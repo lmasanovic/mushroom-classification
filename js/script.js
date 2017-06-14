@@ -1,6 +1,10 @@
 $.getJSON("./data/mushroom-properties.json", ({
 })).done(createForm);
 
+$(function() {
+
+});
+
 function createForm(json) {
 	$.each(json, function(i, property) {
 
@@ -34,8 +38,9 @@ function createForm(json) {
 	// Append submit button
 	$("form").append($(document.createElement("button"))
 	.html("Submit")
-	.addClass("btn btn-primary")
+	.addClass("btn")
 	.attr({
+		id: "submit-button",
 		type: "submit",
 		name: "submit",
 		value: "submit"
